@@ -1,0 +1,32 @@
+$primaryColor: #d4a758;
+$secondaryColor: #9d6f01;
+$fontColor: #666666;
+$inverseColor: #ffffff;
+$list-bg-color1: #efdcb6;
+$list-bg-color2: #ede7da;
+$menuColor: #000000; 
+$rulerColor: #cccccc;
+$highLight: $primaryColor;
+
+
+
+$defaultFont: sans-serif, Helvetica, Arial;
+$normalWeight: 300;
+$boldWeight: 700;
+
+$gutter: 100% * (362 / 1920);
+$headerImgWidth: 100% * (1920 / (1920 - 362 * 2));
+
+//Responsive gutter width
+//In original mock desktp design page width is 1920 pixels and gutter is 362 pixels.
+$maxWidth: 1920px;
+$largeGutter: 18.85%;
+$largeHeaderImgWidth: 100% * (100 / (100 - 18.85 * 2));
+$mediumGutter: 12%;
+$mediumHeaderImgWidth: 100% * (100 / (100 - 12 * 2));
+//In original mock mobile design page width is 459 pixels and gutter is 39 pixels.
+$smallGutter: 8.5%;
+$smallHeaderImgWidth: 100% * (100 / (100 - 8.5 * 2));
+$subMenuIndent: 13%;
+
+$topMobileNavPos: 57vw;

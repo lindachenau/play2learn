@@ -1,0 +1,126 @@
+/*  ----------------------- BODY --------------------------- */
+
+/*  ----------------------- HEADER ------------------------- */
+.header-wrapper { 
+    background-image: url(./images/BottomBar.jpg);
+}
+
+.header-content {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+/*  ----------------------- MAIN --------------------------- */
+main {
+    background-image: url(./images/Watermark_crop.jpg);
+}
+
+.main-content {
+    padding: 0 $mediumGutter;
+}
+
+.headerImgWrapper { 
+    width: $mediumHeaderImgWidth;
+}
+
+/*  ----------------------- NAVIGATION --------------------------- */
+nav button {
+    display: none;
+}
+
+#menu-main-navigation.closed 
+{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex
+}
+
+.main-navigation {
+    width: 90vw;
+    position: relative;
+    flex-wrap: nowrap;   
+    -webkit-flex-wrap: nowrap; 
+    justify-content: space-around;
+    align-items: center;
+
+    .closed {
+        display: block;
+    }
+
+    li {
+        list-style-type: none;
+        float: left;
+    }    
+
+    li a {
+        color: $menuColor;
+        background: none;
+        padding: 0;
+    }
+
+    li ul {
+        left: -999em;
+        position: absolute;
+    }
+    
+    li:hover ul {
+        left: auto;
+    }
+
+    li ul li {
+        float: none;
+    }
+    
+    .menu-item-has-children > a::after {
+        font-size: .75em;
+        margin: 0 1em;
+        content: "\25BC";
+        color: white;
+        background: black;
+    }
+        
+    li ul li a {
+        padding: 0.25em 1em;
+        background: rgba(0,0,0,.7);
+        color: $inverseColor;
+    }
+    
+} // end nav
+
+/*  ----------------------- WIDGET --------------------------- */
+.top-sidebar {
+    float: right;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    margin-top: calc(-63px + 14.27vw);
+}
+
+.heateor_sss_sharing_container {
+    position: relative;
+    bottom: auto;
+    margin: 1em auto;
+}
+
+.search-container {
+    margin-top: 1em;
+    float: none;
+}
+
+.blog-container {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+/*  ----------------------- FOOTER --------------------------- */
+.footer-wrapper { 
+    background-image: url(./images/BottomBar.jpg);
+}
+
+.footer-content {
+    padding: 3em $mediumGutter 6em $mediumGutter;
+}

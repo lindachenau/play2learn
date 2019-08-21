@@ -1,0 +1,276 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*  ----------------------- BODY --------------------------- */
+body{
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    //Responsive font size
+    font-size: calc(11px + 0.3vw);
+    line-height: 1.6em;
+}
+
+/*  ----------------------- HEADER ------------------------- */
+.header-wrapper { 
+    background-image: url(./images/BottomBar-mobile.jpg);
+    background-size: cover;
+}
+    
+header {
+    margin: 0 auto;
+    max-width: $maxWidth;
+    padding: 0.6em;
+}
+ 
+.header-content {
+    color: $inverseColor;
+    font-size: 1em;
+    justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    text-align: center;
+
+    .title {
+        font-weight: bold;
+    }
+
+    .tagLine {
+        font-weight: 400;
+    }
+    .dash {
+        display: none;
+    }
+}        
+
+/*  ----------------------- NAVIGATION --------------------------- */
+
+#hamburgerBtn {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: $menuColor;
+    padding: 2px 5px;
+    margin-top: $topMobileNavPos;
+    margin-bottom: 0.5em;
+}
+
+#menu-main-navigation.closed {display: none;}
+
+.main-navigation {
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    margin: 0 auto 0.5em auto;
+    
+    li a {
+        display: block;
+        color: $inverseColor;
+        background: rgba(0,0,0,.7);
+        padding: 0.25em $smallGutter;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.8em;
+        -webkit-transition: .5s all;
+        transition: .5s all;
+    }
+
+    li a:hover {
+        color: $highLight;     
+    }
+
+    li ul li a {
+        padding-left: $subMenuIndent;
+    }
+}
+
+/*  ----------------------- MAIN --------------------------- */
+main {
+    background-image: url(./images/Watermark_crop-mobile.jpg);
+    width: 100%;
+    margin: 0 auto;
+    background-position: 50% 0;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+.main-content {
+    position: relative;
+    color: $fontColor;
+    padding: 0 $smallGutter;
+    margin: 0 auto;
+    
+    .home h1 {
+        font-size: 2.5em;
+        color: $menuColor;
+    } // 45pt for Home page
+
+    h1 {
+        font-size: 2.67em;
+        color: $secondaryColor;
+        font-weight: bold;
+    } // Century Gothic bold 48pt
+    
+    h2 {
+        font-size: 1.39em;
+        color: $secondaryColor;
+        font-weight: bold;
+    } // Century Gothic bold 25pt
+    
+    p {
+        color: $fontColor;
+        font-size: 1.11em;
+    } // regular 20pt
+
+    .pageTitle {
+        text-transform: capitalize;
+    }
+}
+ 
+.headerImgWrapper {
+    width: $smallHeaderImgWidth;
+    margin-bottom: 1.5em;
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+}
+
+.headerImg {
+    width: 100%;
+    margin: 0 auto;
+}
+    
+
+/*  ----------------------- FOOTER --------------------------- */
+.footer-wrapper { 
+    margin-top: 2em; 
+    background-image: url(./images/BottomBar-mobile.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    background-position: 50% 0;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    padding: 3em $smallGutter 6em $smallGutter;
+    text-align: left;
+    color: $inverseColor;
+
+    .heading {
+        font-size: 2.5em;
+    }    
+
+    .footer-note {
+        max-width: 30em;
+        font-size: 1.11em;
+        font-family: Helvetica;
+
+    }
+}    
+
+/*  ----------------------- WIDGET --------------------------- */
+
+.heateor_sss_sharing_container {
+    position: absolute;
+    bottom: 1em;
+    right: $smallGutter;
+
+    .heateor_sss_sharing_ul li {
+        min-width: 2em;
+    }
+}
+
+.search-container {
+    margin-top: $topMobileNavPos;
+    float: right;
+
+    .search-form .search-submit {
+        background-color: inherit;
+        border: none;
+    }
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    display: -ms-flexbox;
+}
+
+.blog { 
+    margin-top: 1em;
+    flex-basis: 65%;
+    -webkit-flex-basis: 65%;
+    padding-right: 3em;
+    padding-bottom: 2em;
+
+    h2 { 
+        padding: 0.5em 0; 
+    }
+    p { 
+        padding-bottom: 1em;
+    }
+
+    .logged-in-as {
+        font-size: 0.7em;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    #submit {
+        color: $inverseColor;
+        background-color: $primaryColor;
+        border: none;
+        border-radius: 5px;
+        padding: 3px 6px;
+    }
+ }
+
+.main-sidebar {
+    margin-top: 1em;
+    margin-bottom: 3em;
+    flex-basis: 35%;
+    -webkit-flex-basis: 35%;
+
+    .widget-title { text-transform: uppercase; }
+
+    h2 {
+        margin: 0.5em 0;
+    }
+
+    ul {
+        list-style-position: inside;
+        list-style-type: circle; 
+        margin-bottom: 1em;
+    }
+
+    a:hover { color: $primaryColor;}
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

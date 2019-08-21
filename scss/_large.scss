@@ -1,0 +1,45 @@
+/*  ----------------------- BODY --------------------------- */
+
+/*  ----------------------- HEADER ------------------------- */
+ 
+.header-content {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+
+    .dash {
+        display: inline;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+/*  ----------------------- MAIN --------------------------- */
+main {
+    max-width: $maxWidth;
+}
+
+.main-content {
+    padding: 0 $largeGutter;
+}
+
+.headerImgWrapper { 
+    width: $largeHeaderImgWidth;
+}
+
+.headerImg {
+    max-width: $maxWidth;
+}
+
+/*  ----------------------- NAVIGATION --------------------------- */
+.main-navigation {
+    width: 80vw;
+}
+
+/*  ----------------------- FOOTER --------------------------- */
+footer {
+    max-width: $maxWidth;
+}
+
+.footer-content {
+    padding: 3em $largeGutter 6em $largeGutter;
+}
