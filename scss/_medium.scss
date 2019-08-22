@@ -111,9 +111,15 @@ nav button {
     float: none;
 }
 
-.blog-container {
-    flex-direction: row;
-    -webkit-flex-direction: row;
+.blog { 
+    float: left;
+    width: 65%; 
+    padding-right: 3em;
+}
+
+.main-sidebar { 
+    float: right;
+    width: 35%; 
 }
 
 /*  ----------------------- FOOTER --------------------------- */
