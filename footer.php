@@ -2,7 +2,7 @@
 /* Main Footer Template */
 
 ?>
-    <div class="footer-wrapper">
+    <div class="footer-wrapper clearfix">
         <footer>
             <div class="footer-content">
                 <span class="heading"><b>BOOK</b> AN INITIAL CONSULTATION</span><br><br>
