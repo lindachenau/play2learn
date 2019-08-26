@@ -8,6 +8,8 @@
 .header-content {
     flex-direction: column;
     -webkit-flex-direction: column;
+
+    .tagLine { font-size: 1em; }
 }
 
 /*  ----------------------- MAIN --------------------------- */
@@ -129,4 +131,28 @@ nav button {
 
 .footer-content {
     padding: 3em $mediumGutter 6em $mediumGutter;
+}
+
+/*----- Home Page Content styles -----*/
+.homeColumns {
+    flex-direction: row;
+}
+
+.homeSecWrapper {
+    flex-basis: 30%;
+}
+
+/* -----------------------A Day in the Life Content -----------------------*/
+.lifeColumns {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.lifeSecWrapper {
+    flex-basis: 47%;
+}
+
+/* -----------------------About -----------------------*/
+.imgFloated {
+    width: 40%;
 }

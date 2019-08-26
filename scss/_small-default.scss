@@ -44,6 +44,7 @@ header {
 
     .tagLine {
         font-weight: 400;
+        font-size: 0.7em;
     }
     .dash {
         display: none;
@@ -110,34 +111,44 @@ main {
     color: $fontColor;
     padding: 0 $smallGutter;
     margin: 0 auto;
-    
-    .home h1 {
-        font-size: 2.5em;
-        color: $menuColor;
-    } // 45pt for Home page
-
+   
     h1 {
         font-size: 2.67em;
         color: $secondaryColor;
         font-weight: bold;
+        margin-bottom: 0.8em;
     } // Century Gothic bold 48pt
     
     h2 {
         font-size: 1.39em;
         color: $secondaryColor;
         font-weight: bold;
+        margin-top: 1em;
     } // Century Gothic bold 25pt
+
+    h3 {
+        font-size: 1.11em;
+        color: $fontColor;
+        font-weight: bold;
+    } // Century Gothic bold 20pt
     
     p {
         color: $fontColor;
         font-size: 1.11em;
+        margin: 0.5em auto;
     } // regular 20pt
+
+    hr {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $rulerColor
+    }
 
     .pageTitle {
         text-transform: capitalize;
     }
 }
- 
+
 .headerImgWrapper {
     width: $smallHeaderImgWidth;
     margin-bottom: 1.5em;
@@ -256,6 +267,7 @@ footer {
         list-style-position: inside;
         list-style-type: circle; 
         margin-bottom: 1em;
+        padding-left: 2em;
     }
 
     a:hover { color: $primaryColor;}
@@ -266,4 +278,136 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+
+/*----- Home Page Content styles -----*/
+#homeHeading {
+    font-size: 2.5em;
+    color: $menuColor;
+    line-height: 1.3em;
+    margin: 1em 0;
+} // 45pt for Home page
+
+.curlyQuotes:before, .curlyQuotes:after {
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    line-height: 48px;
+    font-size: 50px;
+    opacity: 0.5;
+}
+
+.curlyQuotes:before {
+    content: '\201C';
+    margin-right: 4px;
+    margin-left: -8px;
+}
+
+.curlyQuotes:after {
+    content: '\201D';
+    margin-left: 4px;
+    margin-right: -8px;
+}
+
+.quoteBy {
+    display: block;
+    padding-right: 1em;
+    text-align: right;
+    font-style: italic;
+}
+
+.homeColumns {
+    width: 100%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.homeSecWrapper {
+    flex-basis: 100%;
+    margin-bottom: 2em;
+
+    p { margin-bottom: 1em; }
+}
+
+.thumbnail {
+    border-radius: 5%;
+    width: 100%;
+}
+
+figcaption {
+    margin: 0.5em 0;
+    font-size: 1.39em;
+    color: $secondaryColor;
+    font-weight: bold;    
+}
+
+.readMoreBtn {
+    display: block;
+    width: 8em;
+    background: $primaryColor;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+/* -----------------------A Day in the Life Content -----------------------*/
+.lifeColumns {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lifeSecWrapper {
+    flex-basis: 100%;
+    margin-bottom: 1em;
+}
+
+/* -----------------------About -----------------------*/
+.blkWithImg {
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.imgFloated {
+    width: 60%;
+    display: block;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    float: left;
+    border-radius: 5%;
+}
+
+h2.secHeading {
+    font-size: 1.94em;
+    margin-bottom: 0.8em;
+} //35pt
+
+.jadeFacts {
+    list-style-position: inside;
+    list-style-type: circle; 
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+/* -----------------------Programs -----------------------*/
+.listBg1 {
+    display: block;
+    width: 100%;
+    padding: 1.5em;
+    background-color: $list-bg-color1;
+}
+
+.listBg2 {
+    display: block;
+    width: 100%;
+    padding: 1.5em;
+    background-color: $list-bg-color2;
 }

@@ -43,3 +43,18 @@ footer {
 .footer-content {
     padding: 3em $largeGutter 6em $largeGutter;
 }
+
+/* -----------------------A Day in the Life Content -----------------------*/
+.lifeColumns {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.lifeSecWrapper {
+    flex-basis: 22%;
+}
+
+/* -----------------------About -----------------------*/
+.imgFloated {
+    width: 30%;
+}
