@@ -264,10 +264,9 @@ footer {
     }
 
     ul {
-        list-style-position: inside;
-        list-style: disc; 
+        list-style: disc outside none; 
         margin-bottom: 1em;
-        padding-left: 2em;
+        padding-left: 3em;
     }
 
     a:hover { color: $primaryColor;}
@@ -391,8 +390,7 @@ h2.secHeading {
 } //35pt
 
 .jadeFacts {
-    list-style-position: inside;
-    list-style: disc; 
+    list-style: disc inside none; 
     margin-bottom: 1em;
     padding-left: 2em;
 }
