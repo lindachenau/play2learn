@@ -132,7 +132,7 @@ main {
         font-weight: bold;
     } // Century Gothic bold 20pt
     
-    p {
+    p, i {
         color: $fontColor;
         font-size: 1.11em;
         margin: 0.5em auto;
@@ -267,6 +267,8 @@ footer {
         list-style: disc outside none; 
         margin-bottom: 1em;
         padding-left: 3em;
+        color: $fontColor;
+        font-size: 1.11em;        
     }
 
     a:hover { color: $primaryColor;}
@@ -286,27 +288,6 @@ footer {
     line-height: 1.3em;
     margin: 1em 0;
 } // 45pt for Home page
-
-.curlyQuotes:before, .curlyQuotes:after {
-    display: inline-block;
-    vertical-align: top;
-    height: 30px;
-    line-height: 48px;
-    font-size: 50px;
-    opacity: 0.5;
-}
-
-.curlyQuotes:before {
-    content: '\201C';
-    margin-right: 4px;
-    margin-left: -8px;
-}
-
-.curlyQuotes:after {
-    content: '\201D';
-    margin-left: 4px;
-    margin-right: -8px;
-}
 
 .quoteBy {
     display: block;
@@ -390,9 +371,11 @@ h2.secHeading {
 } //35pt
 
 .jadeFacts {
-    list-style: disc inside none; 
+    list-style: disc outside none; 
     margin-bottom: 1em;
-    padding-left: 2em;
+    padding-left: 3em;
+    color: $fontColor;
+    font-size: 1.11em;    
 }
 
 /* -----------------------Programs -----------------------*/
