@@ -6,6 +6,9 @@
 
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
     <?php wp_head(); ?>
 </head>
 
