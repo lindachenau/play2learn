@@ -388,12 +388,12 @@ h2.secHeading {
     display: block;
     width: 100%;
     padding: 1.5em;
-    background-color: $list-bg-color1;
+    background-image: linear-gradient($list-bg-color2, $list-bg-color1);
 }
 
 .listBg2 {
     display: block;
     width: 100%;
     padding: 1.5em;
-    background-color: $list-bg-color2;
+    background-image: linear-gradient(#eceae5, $list-bg-color2);
 }
