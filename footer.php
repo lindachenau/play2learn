@@ -8,9 +8,9 @@
                 <span class="heading"><b>BOOK</b> AN INITIAL CONSULTATION</span><br><br>
                 <div class="footer-note">
                     If there is ever anything you need, please get in touch. We are here for you in every capacity.<br><br>
-                    247 Main Rd, Toukley<br>
+                    247 Main Rd, Toukley, NSW 2263<br>
                     P: 02 4397 1683<br>
-                    E: info@toukleychildcare.com.au
+                    E: playtolearn@bigpond.com
                 </div>
             </div>
         </footer>
