@@ -371,11 +371,16 @@ h2.secHeading {
 } //35pt
 
 .jadeFacts {
-    list-style: disc outside none; 
+    list-style: disc inside none; 
     margin-bottom: 1em;
     padding-left: 3em;
     color: $fontColor;
     font-size: 1.11em;    
+}
+
+.linkHighlight {
+    li a:hover { color: $highLight; }
+    li a::before { content: "🗎 "; }
 }
 
 /* -----------------------Programs -----------------------*/
