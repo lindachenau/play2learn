@@ -9,7 +9,7 @@ body{
     font-family: $defaultFont;
     font-weight: $normalWeight;
     //Responsive font size
-    font-size: calc(11px + 0.3vw);
+    font-size: calc(12px + 0.25vw);
     line-height: 1.6em;
 }
 
@@ -190,8 +190,12 @@ footer {
     .footer-note {
         max-width: 30em;
         font-size: 1.11em;
-        font-family: Helvetica;
-
+        
+        .copyright {
+            color: transparent;
+        }
+        
+        p:hover { color: $list-bg-color1; }
     }
 }    
 
@@ -373,14 +377,14 @@ h2.secHeading {
 .jadeFacts {
     list-style: disc inside none; 
     margin-bottom: 1em;
-    padding-left: 3em;
+    padding-left: 1em;
     color: $fontColor;
     font-size: 1.11em;    
 }
 
 .linkHighlight {
     li a:hover { color: $highLight; }
-    li a::before { content: "🗎 "; }
+    li a::before { content: "📩 "; }
 }
 
 /* -----------------------Programs -----------------------*/
