@@ -25,7 +25,7 @@ add_action( 'init', 'register_play2learn_menus' );
 function play2learn_scripts() {
     
     // Enqueue Main Stylesheet
-    wp_enqueue_style( 'play2learn_styles', get_stylesheet_uri(), array(), '0.93', 'all');
+    wp_enqueue_style( 'play2learn_styles', get_stylesheet_uri(), array(), '0.94', 'all');
 }
 add_action( 'wp_enqueue_scripts', 'play2learn_scripts' );
 
